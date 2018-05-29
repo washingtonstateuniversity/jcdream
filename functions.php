@@ -1,6 +1,7 @@
 <?php
 
 add_action( 'after_setup_theme', 'jcdream_setup', 11 );
+add_action( 'wp_enqueue_scripts', 'jcdream_scripts', 11 );
 add_action( 'init', 'jcdream_menus' );
 
 /**
@@ -29,6 +30,26 @@ function jcdream_setup() {
 
 	remove_image_size( 'twentyseventeen-featured-image' );
 	remove_image_size( 'twentyseventeen-thumbnail-avatar' );
+}
+
+/**
+ * Enqueues styles and scripts.
+ *
+ * @since 0.0.1
+ */
+function jcdream_scripts() {
+	// Dequeue twentyseventeen fonts.
+	wp_dequeue_style( 'twentyseventeen-fonts' );
+
+	// Enqueue the actual twentyseventeen stylesheet.
+	wp_dequeue_style( 'twentyseventeen-style' );
+	wp_enqueue_style( 'twentyseventeen-style', get_template_directory_uri() . '/style.css' );
+
+	// Enqueue the Nunito font family stylesheet.
+	wp_enqueue_style( 'nunito', '//fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,700i,800,900' );
+
+	// Enqueue JCDREAM styles with theme version.
+	wp_enqueue_style( 'jcdream-style', get_stylesheet_directory_uri() . '/style.css', array( 'twentyseventeen-style', 'nunito' ), jcdream_theme_version() );
 }
 
 /**
