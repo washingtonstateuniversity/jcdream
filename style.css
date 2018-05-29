@@ -1,12 +1,18 @@
 /*
  Theme Name:     jcdream child theme
  Theme URI:      https://web.wsu.edu
- Description:    A child theme for twentsixteen
+ Description:    A child theme for twentseventeen
  Author:         WSU University Communications
  Author URI:     https://web.wsu.edu
- Template:       twentysixteen
+ Template:       twentyseventeen
  Version:        0.0.1
 */
+
+#content {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 8em 2em 3em;
+}
 
 @media screen and (min-width: 48em) {
 
@@ -17,6 +23,10 @@
 	.navigation-top nav,
 	.site-footer {
 		margin-left: 0;
+	}
+
+	#content {
+		padding: 12em 3em 3em;
 	}
 
 	.blog:not(.has-sidebar) #primary article,

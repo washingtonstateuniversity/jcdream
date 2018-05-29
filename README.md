@@ -1,3 +1,3 @@
 # JCDream child theme
-_A child theme of twentysixteen_
-===============================
+
+_A child theme of twentyseventeen_
