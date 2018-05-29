@@ -1,34 +1,26 @@
-					</main><!-- #content -->
+	</main>
 
-				</div><!-- #primary -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
 
-			</div><!-- #content -->
+		<div class="wrap">
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+			<nav class="footer-nav">
 
-				<div class="wrap">
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'footer',
+					'menu_class' => '',
+					'container' => '',
+					'fallback_cb' => false,
+					'depth' => 1,
+				) );
+				?>
 
-					<nav class="footer-nav">
+			</nav>
 
-						<?php
-						wp_nav_menu( array(
-							'theme_location' => 'footer',
-							'menu_class' => '',
-							'container' => '',
-							'fallback_cb' => false,
-							'depth' => 1,
-						) );
-						?>
+		</div>
 
-					</nav>
-
-				</div>
-
-			</footer>
-
-		</div><!-- .site-content-contain -->
-
-	</div><!-- #page -->
+	</footer>
 
 <?php wp_footer(); ?>
 
