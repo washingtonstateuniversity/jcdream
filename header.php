@@ -19,9 +19,9 @@
 
 				<div class="wrap">
 
-					<header class="site-title">
+					<div class="site-title">
 						<a href="<?php echo esc_url( home_url() ); ?>" rel="home"><span class="weight">JC</span>Dream</a>
-					</header>
+					</div>
 
 					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">
 
