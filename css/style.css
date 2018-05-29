@@ -199,12 +199,9 @@ h2 + ul {
 	color: #fff;
 }
 
-.bg-image-full {
-	display: block;
-	height: 140px;
-	width: 100%;
-	background-color: #646783; /* You can remove this when the image is in place */
-	background-image: url();
-	background-position: fixed;
-	background-size: cover;
+.wp-block-cover-image.has-parallax {
+	background-position: center;
+	left: calc(50% - 50vw);
+	margin-bottom: 0;
+	width: 100vw;
 }
