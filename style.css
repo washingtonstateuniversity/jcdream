@@ -8,7 +8,283 @@
  Version:        0.0.1
 */
 
-main {
-	color: #000;
+@media screen and (min-width: 48em) {
+
+	.site-title {
+		font-size: 28px;
+	}
+
+	.navigation-top nav,
+	.site-footer {
+		margin-left: 0;
+	}
+
+	.blog:not(.has-sidebar) #primary article,
+	.archive:not(.page-one-column):not(.has-sidebar) #primary article,
+	.search:not(.has-sidebar) #primary article,
+	.error404:not(.has-sidebar) #primary .page-content,
+	.error404.has-sidebar #primary .page-content,
+	body.page-two-column:not(.archive) #primary .entry-content,
+	body.page-two-column #comments {
+		float: none;
+	}
+
+	.blog:not(.has-sidebar) #primary article,
+	.archive:not(.page-one-column):not(.has-sidebar) #primary article,
+	.search:not(.has-sidebar) #primary article,
+	.error404:not(.has-sidebar) #primary .page-content,
+	.error404.has-sidebar #primary .page-content,
+	body.page-two-column:not(.archive) #primary .entry-content,
+	body.page-two-column #comments {
+		width: 70%;
+	}
+
+	header .wrap {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.site-title {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.site-title {
+		padding-left: 1em;
+	}
+
+	.site-footer .wrap ul {
+		-ms-flex-pack: center;
+		    justify-content: center;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		line-height: 1.5;
+		padding-bottom: 0;
+	}
+
+	.site-footer .wrap ul li {
+		padding-bottom: 1em;
+	}
+}
+
+body {
+	color: #555;
+	font-family: Nunito, sans-serif;
+}
+
+#masthead .wrap {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row no-wrap;
+	    flex-direction: row no-wrap;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	padding-right: 0;
+}
+
+.navigation-top,
+.site-footer {
+	background-color: #3748ac;
+	border-bottom: none;
+}
+
+.navigation-top .site-title,
+.navigation-top .site-title a {
+	color: #50e3c2;
+	font-weight: 300;
+	line-height: 0;
+	display: block;
+	margin: auto auto auto 0;
+	vertical-align: middle;
+}
+
+.navigation-top .site-title span.weight {
+	font-weight: 700;
+}
+
+.navigation-top nav a,
+.site-footer nav ul li a {
+	color: #fff;
+	font-weight: 300;
+}
+
+.navigation-top nav a:hover,
+.site-footer nav ul li a:hover {
+	color: #50e3c2;
+}
+
+.site-footer .wrap {
+	padding-right: 0;
+}
+
+.site-footer nav {
+	float: right;
+	line-height: 0;
+}
+
+.site-footer ul {
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	list-style: none;
+	margin-bottom: 0;
+	padding: 1em 0;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+
+}
+
+.site-footer ul li {
+	padding-right: 2em;
+}
+
+.site-footer nav ul li.sif a,
+.menu-toggle {
+	color: #50e3c2;
+}
+
+.site-footer nav ul li.sif a:hover,
+.menu-toggle:hover,
+.menu-toggle:focus {
+	color: #fff;
+}
+
+.menu-toggle {
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3 {
+	color: #3748ac;
+}
+
+h1 {
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 44px;
+}
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border-bottom: 1px solid #555;
+	padding-bottom: .5em;
+}
+
+.home h1:first-of-type {
+	padding-top: 0;
+}
+
+sup {
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+p,
+ul li,
+ol li {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+ul,
+ol {
+	padding-left: 2.5em;
+}
+
+h2 + ul {
+	padding-top: 1em;
+}
+
+.panel-content a {
+	background-color: #b8f0e4;
+	border: none;
+	box-shadow: none;
+}
+
+.panel-content a:hover {
+	background-color: #50e3c2;
+	border: none;
+	box-shadow: none;
+}
+
+.panel-content a.button {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1em .5em;
+	border-radius: 8px;
+	box-shadow: none;
+	cursor: pointer;
+	background-color: #3748ac;
+	color: #50e3c2;
+	border: 1px solid #3748ac;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 16px;
+	transition: all ease .5s;
+}
+
+.panel-content a.button:hover {
+	box-shadow: none;
+	background: #fff;
+	color: #3748ac;
+	border-color: #3748ac;
+}
+
+.panel-content.blue-wrap {
+	padding-top: 6em;
+	padding-bottom: 3em;
+}
+
+.blue-wrap {
+	background-color: #3748ac;
+}
+
+.blue-wrap sup,
+.blue-wrap p,
+.blue-wrap ol li,
+.blue-wrap ul li {
+	color: #fff;
+}
+
+.blue-wrap h1,
+.blue-wrap h2,
+.blue-wrap h3 {
+	color: #50e3c2;
+}
+
+.blue-wrap h2 {
+	border-color: #fff;
+}
+
+.blue-wrap a.button {
+	border: 1px solid #fff;
+	background: #fff;
+	color: #3748ac;
+}
+
+.blue-wrap a.button:hover {
+	border: 1px solid #fff;
+	background: #3748ac;
+	color: #fff;
+}
+
+.bg-image-full {
+	display: block;
+	height: 140px;
+	width: 100%;
+	background-color: #646783; /* You can remove this when the image is in place */
+	background-image: url();
+	background-position: fixed;
+	background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

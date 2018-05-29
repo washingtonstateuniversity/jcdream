@@ -1,0 +1,61 @@
+@media screen and (min-width: 48em) {
+
+	.site-title {
+		font-size: 28px;
+	}
+
+	.navigation-top nav,
+	.site-footer {
+		margin-left: 0;
+	}
+
+	.blog:not(.has-sidebar) #primary article,
+	.archive:not(.page-one-column):not(.has-sidebar) #primary article,
+	.search:not(.has-sidebar) #primary article,
+	.error404:not(.has-sidebar) #primary .page-content,
+	.error404.has-sidebar #primary .page-content,
+	body.page-two-column:not(.archive) #primary .entry-content,
+	body.page-two-column #comments {
+		float: none;
+	}
+
+	.blog:not(.has-sidebar) #primary article,
+	.archive:not(.page-one-column):not(.has-sidebar) #primary article,
+	.search:not(.has-sidebar) #primary article,
+	.error404:not(.has-sidebar) #primary .page-content,
+	.error404.has-sidebar #primary .page-content,
+	body.page-two-column:not(.archive) #primary .entry-content,
+	body.page-two-column #comments {
+		width: 70%;
+	}
+
+	header .wrap {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.site-title {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.site-title {
+		padding-left: 1em;
+	}
+
+	.site-footer .wrap ul {
+		justify-content: center;
+		flex-wrap: wrap;
+		line-height: 1.5;
+		padding-bottom: 0;
+	}
+
+	.site-footer .wrap ul li {
+		padding-bottom: 1em;
+	}
+}
