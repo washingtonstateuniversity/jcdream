@@ -1,3 +1,9 @@
+#content {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 8em 2em 3em;
+}
+
 @media screen and (min-width: 48em) {
 
 	.site-title {
@@ -7,6 +13,10 @@
 	.navigation-top nav,
 	.site-footer {
 		margin-left: 0;
+	}
+
+	#content {
+		padding: 12em 3em 3em;
 	}
 
 	.blog:not(.has-sidebar) #primary article,
