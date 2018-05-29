@@ -22,7 +22,7 @@
 					<div class="wrap">
 
 						<header class="site-title">
-							<a href="https://stage.web.wsu.edu/jcdream/" rel="home"><span class="weight">JC</span>Dream</a>
+							<a href="<?php echo esc_url( home_url() ); ?>" rel="home"><span class="weight">JC</span>Dream</a>
 						</header>
 
 						<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">
