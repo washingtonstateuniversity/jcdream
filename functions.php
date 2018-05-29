@@ -1,6 +1,13 @@
 <?php
+
+add_action( 'init', 'jcdream_menus' );
+
 /**
- * Custom functionality required by your child theme can go here. Use this
- * to override any defaults provided by the Spine parent theme through
- * the provided actions and filters.
+ * Set up navigation menus.
+ *
+ * @since 0.0.1
  */
+function jcdream_menus() {
+	unregister_nav_menu( 'social' );
+	register_nav_menu( 'footer', 'Footer Menu' );
+}
