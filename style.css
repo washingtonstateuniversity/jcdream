@@ -41,6 +41,10 @@
 	.main-navigation a {
 		padding: 1em 1.25em;
 	}
+
+	.home h1 {
+		max-width: calc(70% - 2em);
+	}
 }
 
 @media screen and (min-width: 48em) {
