@@ -400,10 +400,6 @@ main a.button:hover {
 	right: calc(50% - 50vw);
 }
 
-.wp-block-columns {
-	padding-bottom: 6em;
-}
-
 .wp-block-cover-image.has-parallax {
 	background-position: center;
 	left: calc(50% - 50vw);
@@ -415,7 +411,16 @@ main a.button:hover {
 	padding-top: 6em;
 }
 
+.wp-block-columns {
+	column-gap: 4em;
+	padding-bottom: 6em;
+}
+
+.wp-block-columns.has-2-columns {
+	grid-auto-columns: 1fr;
+}
+
 .wp-block-columns.has-2-columns.side-right {
-	grid-auto-columns: 70% 30%;
+	grid-auto-columns: 1fr 30%;
 }
 /*# sourceMappingURL=style.css.map */
