@@ -53,14 +53,6 @@ function jcdream_scripts() {
 	// Enqueue JCDREAM styles with theme version.
 	wp_enqueue_style( 'jcdream-style', get_stylesheet_directory_uri() . '/style.css', array( 'twentyseventeen-style', 'nunito' ), jcdream_theme_version() );
 
-	// Enqueue the twentyseventeen Internet Explorer 8 specific stylesheet.
-	wp_enqueue_style( 'twentyseventeen-ie8', get_template_directory_uri() . '/assets/css/ie8.css', array( 'twentyseventeen-style' ), '1.0' );
-	wp_style_add_data( 'twentyseventeen-ie8', 'conditional', 'lt IE 9' );
-
-	// Enqueue the twentyseventeen html5 shiv.
-	wp_enqueue_script( 'html5', get_template_directory_uri() . '/assets/js/html5.js', array(), '3.7.3' );
-	wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
-
 	// Define some internationalization variables.
 	$twentyseventeen_l10n = array(
 		'quote' => twentyseventeen_get_svg( array( 'icon' => 'quote-right' ) ),
