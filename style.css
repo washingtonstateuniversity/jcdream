@@ -379,6 +379,7 @@ main a.button:hover {
 	content: "";
 	height: 100%;
 	position: absolute;
+	top: 0;
 	width: calc(50vw - 50%);
 }
 
