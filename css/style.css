@@ -126,19 +126,19 @@ h2 + ul {
 	padding-top: 1em;
 }
 
-.panel-content a {
+main a {
 	background-color: #b8f0e4;
 	border: none;
 	box-shadow: none;
 }
 
-.panel-content a:hover {
+main a:hover {
 	background-color: #50e3c2;
 	border: none;
 	box-shadow: none;
 }
 
-.panel-content a.button {
+main a.button {
 	text-transform: uppercase;
 	text-align: center;
 	padding: 1em .5em;
@@ -154,57 +154,134 @@ h2 + ul {
 	transition: all ease .5s;
 }
 
-.panel-content a.button:hover {
+main a.button:hover {
 	box-shadow: none;
 	background: #fff;
 	color: #3748ac;
 	border-color: #3748ac;
 }
 
-.panel-content.blue-wrap {
-	padding-top: 6em;
-	padding-bottom: 3em;
-}
-
-.blue-wrap {
+.blue-scheme,
+.blue-background,
+.blue-background:before,
+.blue-background:after {
 	background-color: #3748ac;
 }
 
-.blue-wrap sup,
-.blue-wrap p,
-.blue-wrap ol li,
-.blue-wrap ul li {
+.blue-scheme main sup,
+.blue-scheme main p,
+.blue-scheme main li,
+.blue-scheme main li,
+.blue-background sup,
+.blue-background p,
+.blue-background li,
+.blue-background li {
 	color: #fff;
 }
 
-.blue-wrap h1,
-.blue-wrap h2,
-.blue-wrap h3 {
+.blue-scheme main h1,
+.blue-scheme main h2,
+.blue-scheme main h3,
+.blue-background h1,
+.blue-background h2,
+.blue-background h3 {
 	color: #50e3c2;
 }
 
-.blue-wrap h2 {
+.blue-scheme main h2,
+.blue-background h2 {
 	border-color: #fff;
 }
 
-.blue-wrap a.button {
+.blue-scheme main a.button,
+.blue-background a.button {
 	border: 1px solid #fff;
 	background: #fff;
 	color: #3748ac;
 }
 
-.blue-wrap a.button:hover {
+.blue-scheme main a.button:hover,
+.blue-background a.button:hover {
 	border: 1px solid #fff;
 	background: #3748ac;
 	color: #fff;
 }
 
-.bg-image-full {
-	display: block;
-	height: 140px;
-	width: 100%;
-	background-color: #646783; /* You can remove this when the image is in place */
-	background-image: url();
-	background-position: fixed;
-	background-size: cover;
+.blue-scheme main .white-background sup,
+.blue-scheme main .white-background p,
+.blue-scheme main .white-background li,
+.blue-scheme main .white-background li {
+	color: #555;
+}
+
+.blue-scheme main .white-background h1,
+.blue-scheme main .white-background h2,
+.blue-scheme main .white-background h3 {
+	color: #3748ac;
+}
+
+.blue-scheme main .white-background h2 {
+	border-color: #555;
+}
+
+.blue-scheme main .white-background a.button {
+	border: 1px solid #3748ac;
+	background: #3748ac;
+	color: #50e3c2;
+}
+
+.blue-scheme main .white-background a.button:hover {
+	border: 1px solid #3748ac;
+	background: #fff;
+	color: #3748ac;
+}
+
+.white-background,
+.blue-background {
+	position: relative;
+}
+
+.white-background,
+.white-background:before,
+.white-background:after {
+	background: #fff;
+}
+
+.white-background:before,
+.white-background:after,
+.blue-background:before,
+.blue-background:after {
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: calc(50vw - 50%);
+}
+
+.white-background:before,
+.blue-background:before {
+	left: calc(50% - 50vw);
+}
+
+.white-background:after,
+.blue-background:after {
+	right: calc(50% - 50vw);
+}
+
+.wp-block-columns {
+	padding-bottom: 6em;
+}
+
+.wp-block-cover-image.has-parallax {
+	background-position: center;
+	left: calc(50% - 50vw);
+	margin-bottom: 0;
+	width: 100vw;
+}
+
+.wp-block-cover-image + * {
+	padding-top: 6em;
+}
+
+.wp-block-columns.has-2-columns.side-right {
+	grid-auto-columns: 70% 30%;
 }

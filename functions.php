@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/includes/custom-meta.php';
+
 add_action( 'after_setup_theme', 'jcdream_setup', 11 );
 add_action( 'wp_enqueue_scripts', 'jcdream_scripts', 11 );
 add_action( 'init', 'jcdream_menus' );
@@ -12,7 +14,7 @@ add_action( 'init', 'jcdream_menus' );
  * @return string
  */
 function jcdream_theme_version() {
-	return '0.0.1';
+	return '0.0.2';
 }
 
 /**

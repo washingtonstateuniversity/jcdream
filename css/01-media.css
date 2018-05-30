@@ -1,7 +1,7 @@
 #content {
 	margin: 0 auto;
 	max-width: 1000px;
-	padding: 8em 2em 3em;
+	padding: 8em 2em 0;
 }
 
 @media screen and (min-width: 48em) {
@@ -15,8 +15,12 @@
 		margin-left: 0;
 	}
 
+	.site-footer {
+		margin-top: 0;
+	}
+
 	#content {
-		padding: 12em 3em 3em;
+		padding: 12em 3em 0;
 	}
 
 	.blog:not(.has-sidebar) #primary article,
