@@ -4,13 +4,26 @@
 	padding: 8em 2em 0;
 }
 
+@media screen and (min-width: 767px) {
+
+	.main-navigation a {
+		padding: 1em .75em;
+	}
+}
+
+@media screen and (min-width: 900px) {
+
+	.main-navigation a {
+		padding: 1em 1.25em;
+	}
+}
+
 @media screen and (min-width: 48em) {
 
 	.site-title {
 		font-size: 28px;
 	}
 
-	.navigation-top nav,
 	.site-footer {
 		margin-left: 0;
 	}
@@ -49,17 +62,23 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
-
-	.site-title {
-		padding-left: 0;
-	}
-}
-
 @media screen and (max-width: 767px) {
 
 	.site-title {
 		padding-left: 1em;
+	}
+
+	.menu-menu-container {
+		position: absolute;
+		right: 0;
+	}
+
+	#top-menu a {
+		color: #555;
+	}
+
+	#top-menu a:hover {
+		color: #3748ac;
 	}
 
 	.site-footer .wrap ul {
