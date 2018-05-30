@@ -5,9 +5,7 @@ body {
 
 #masthead .wrap {
 	display: flex;
-	flex-direction: row no-wrap;
-	justify-content: space-between;
-	padding-right: 0;
+	padding-right: 1em;
 }
 
 .navigation-top,
@@ -16,18 +14,23 @@ body {
 	border-bottom: none;
 }
 
-.navigation-top .site-title,
+.navigation-top .site-title {
+	line-height: 0;
+	display: block;
+	margin: auto 0;
+}
+
 .navigation-top .site-title a {
 	color: #50e3c2;
 	font-weight: 300;
-	line-height: 0;
-	display: block;
-	margin: auto auto auto 0;
-	vertical-align: middle;
 }
 
 .navigation-top .site-title span.weight {
 	font-weight: 700;
+}
+
+.navigation-top nav {
+	margin-left: auto;
 }
 
 .navigation-top nav a,
@@ -139,6 +142,7 @@ main a:hover {
 }
 
 main a.button {
+	display: inline-block;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 1em .5em;
@@ -254,6 +258,7 @@ main a.button:hover {
 	content: "";
 	height: 100%;
 	position: absolute;
+	top: 0;
 	width: calc(50vw - 50%);
 }
 
