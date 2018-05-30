@@ -14,6 +14,10 @@
 	padding: 8em 2em 0;
 }
 
+.page:not(.home) #content {
+	padding-bottom: 0;
+}
+
 @media screen and (max-width: 900px) {
 
 	.wp-block-columns {
@@ -55,6 +59,10 @@
 
 	#content {
 		padding: 12em 3em 0;
+	}
+
+	.page:not(.home) #content {
+		padding-bottom: 0;
 	}
 
 	.blog:not(.has-sidebar) #primary article,
