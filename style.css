@@ -374,4 +374,8 @@ main a.button:hover {
 .wp-block-cover-image + * {
 	padding-top: 6em;
 }
+
+.wp-block-columns.has-2-columns.side-right {
+	grid-auto-columns: 70% 30%;
+}
 /*# sourceMappingURL=style.css.map */
