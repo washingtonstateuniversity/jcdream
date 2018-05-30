@@ -97,7 +97,7 @@
 		padding-left: 1em;
 	}
 
-	.menu-menu-container {
+	.top-menu-container {
 		position: absolute;
 		right: 0;
 	}
@@ -188,7 +188,6 @@ body {
 	padding: 1em 0;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
-
 }
 
 .site-footer ul li {

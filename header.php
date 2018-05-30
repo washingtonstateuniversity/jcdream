@@ -40,7 +40,7 @@
 							'theme_location' => 'top',
 							'menu_id' => 'top-menu',
 							'menu_class' => '',
-							'container-class' => 'menu-main-menu-container',
+							'container_class' => 'top-menu-container',
 							'fallback_cb' => false,
 							'depth' => 1,
 						) );
