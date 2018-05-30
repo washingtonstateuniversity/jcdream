@@ -5,7 +5,7 @@
  Author:         WSU University Communications
  Author URI:     https://web.wsu.edu
  Template:       twentyseventeen
- Version:        0.0.3
+ Version:        0.0.4
 */
 
 #content {
@@ -40,6 +40,10 @@
 
 	.main-navigation a {
 		padding: 1em 1.25em;
+	}
+
+	.home h1 {
+		max-width: calc(70% - 2em);
 	}
 }
 
@@ -97,7 +101,7 @@
 		padding-left: 1em;
 	}
 
-	.menu-menu-container {
+	.top-menu-container {
 		position: absolute;
 		right: 0;
 	}
@@ -188,7 +192,6 @@ body {
 	padding: 1em 0;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
-
 }
 
 .site-footer ul li {
@@ -401,10 +404,6 @@ main a.button:hover {
 	right: calc(50% - 50vw);
 }
 
-.wp-block-columns {
-	padding-bottom: 6em;
-}
-
 .wp-block-cover-image.has-parallax {
 	background-position: center;
 	left: calc(50% - 50vw);
@@ -416,7 +415,16 @@ main a.button:hover {
 	padding-top: 6em;
 }
 
+.wp-block-columns {
+	column-gap: 4em;
+	padding-bottom: 6em;
+}
+
+.wp-block-columns.has-2-columns {
+	grid-auto-columns: 1fr;
+}
+
 .wp-block-columns.has-2-columns.side-right {
-	grid-auto-columns: 70% 30%;
+	grid-auto-columns: 1fr 30%;
 }
 /*# sourceMappingURL=style.css.map */
