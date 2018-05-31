@@ -184,6 +184,10 @@ body {
 	font-family: Nunito, sans-serif;
 }
 
+body.home {
+	overflow-x: hidden;
+}
+
 .navigation-top,
 .site-footer {
 	background-color: #3748ac;
