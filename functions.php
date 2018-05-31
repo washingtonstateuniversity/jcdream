@@ -49,7 +49,7 @@ function jcdream_scripts() {
 	wp_enqueue_style( 'twentyseventeen-style', get_template_directory_uri() . '/style.css' );
 
 	// Enqueue the Nunito font family stylesheet.
-	wp_enqueue_style( 'nunito', '//fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,700i,800,900' );
+	wp_enqueue_style( 'nunito', '//fonts.googleapis.com/css?family=Nunito:300,300i,400,600,800,900', array(), null );
 
 	// Enqueue JCDREAM styles with theme version.
 	wp_enqueue_style( 'jcdream-style', get_stylesheet_directory_uri() . '/style.css', array( 'twentyseventeen-style', 'nunito' ), jcdream_theme_version() );
