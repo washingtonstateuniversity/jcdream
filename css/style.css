@@ -264,14 +264,14 @@ main a.button:hover {
 }
 
 .wp-block-columns {
-	column-gap: 4em;
+	grid-column-gap: 4em;
 	padding-bottom: 6em;
 }
 
 .wp-block-columns.has-2-columns {
-	grid-auto-columns: 1fr;
+	grid-template-columns: 1fr;
 }
 
 .wp-block-columns.has-2-columns.side-right {
-	grid-auto-columns: 1fr 30%;
+	grid-template-columns: 1fr 30%;
 }
