@@ -3,11 +3,6 @@ body {
 	font-family: Nunito, sans-serif;
 }
 
-#masthead .wrap {
-	display: flex;
-	padding-right: 1em;
-}
-
 .navigation-top,
 .site-footer {
 	background-color: #3748ac;
@@ -34,43 +29,27 @@ body {
 }
 
 .navigation-top nav a,
-.site-footer nav ul li a {
-	color: #fff;
+.site-footer a {
 	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.navigation-top nav a,
+.site-footer a,
+.menu-toggle:hover,
+.menu-toggle:focus {
+	color: #fff;
 }
 
 .navigation-top nav a:hover,
-.site-footer nav ul li a:hover {
-	color: #50e3c2;
-}
-
-.site-footer .wrap {
-	padding-right: 0;
-}
-
-.site-footer nav {
-	float: right;
-	line-height: 0;
-}
-
-.site-footer ul {
-	display: inline-flex;
-	list-style: none;
-	margin-bottom: 0;
-	padding: 1em 0;
-	justify-content: space-between;
-}
-
-.site-footer ul li {
-	padding-right: 2em;
-}
-
-.site-footer nav ul li.sif a,
+.site-footer a:hover,
 .menu-toggle {
 	color: #50e3c2;
 }
 
-.site-footer nav ul li.sif a:hover,
+.navigation-top nav a,
+.site-footer a,
 .menu-toggle:hover,
 .menu-toggle:focus {
 	color: #fff;
@@ -180,6 +159,8 @@ main a.button:hover {
 .blue-background li,
 .blue-background li {
 	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .blue-scheme main h1,
