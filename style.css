@@ -22,6 +22,10 @@
 	padding: 8em 2em 0;
 }
 
+.home #content {
+	max-width: 1040px;
+}
+
 .admin-bar #content {
 	min-height: calc(100vh - 93px);
 }
