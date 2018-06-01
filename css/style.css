@@ -65,6 +65,10 @@ body.home {
 	letter-spacing: 1px;
 }
 
+.top-menu-container #top-menu li a {
+	font-weight: 600;
+}
+
 h1,
 h2,
 h3 {

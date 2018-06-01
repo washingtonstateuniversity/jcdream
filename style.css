@@ -5,7 +5,7 @@
  Author:         WSU University Communications
  Author URI:     https://web.wsu.edu
  Template:       twentyseventeen
- Version:        0.0.4
+ Version:        0.0.5
 */
 
 #masthead .wrap {
@@ -248,6 +248,10 @@ body.home {
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+.top-menu-container #top-menu li a {
+	font-weight: 600;
 }
 
 h1,
