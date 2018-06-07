@@ -15,7 +15,7 @@ add_action( 'init', 'jcdream_menus' );
  * @return string
  */
 function jcdream_theme_version() {
-	return '0.0.5';
+	return '0.0.6';
 }
 
 /**
