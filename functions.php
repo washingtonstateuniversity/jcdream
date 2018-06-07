@@ -15,7 +15,7 @@ add_action( 'init', 'jcdream_menus' );
  * @return string
  */
 function jcdream_theme_version() {
-	return '0.0.5';
+	return '0.0.6';
 }
 
 /**
@@ -79,4 +79,39 @@ function jcdream_scripts() {
 function jcdream_menus() {
 	unregister_nav_menu( 'social' );
 	register_nav_menu( 'footer', 'Footer Menu' );
+}
+
+/**
+ * Prints HTML with meta information for the current post-date/time and author.
+ * (Copied and modified from Twenty Seventeen.)
+ */
+function twentyseventeen_posted_on() {
+
+	// Get the author name.
+	$byline = sprintf(
+		_x( 'by %s', 'post author', 'twentyseventeen' ),
+		'<span class="author vcard">' . get_the_author() . '</span>'
+	);
+
+	// Finally, write all of this to the page.
+	echo '<span class="posted-on">' . twentyseventeen_time_link() . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+}
+
+/**
+ * Gets a nicely formatted string for the published date.
+ * (Copied and modified from Twenty Seventeen.)
+ */
+function twentyseventeen_time_link() {
+	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+	}
+	$time_string = sprintf( $time_string,
+		get_the_date( DATE_W3C ),
+		get_the_date(),
+		get_the_modified_date( DATE_W3C ),
+		get_the_modified_date()
+	);
+	// Preface the time string with 'Posted on'.
+	return '<span class="screen-reader-text">' . _x( 'Posted on', 'post date', 'twentyseventeen' ) . '</span> ' . $time_string;
 }
