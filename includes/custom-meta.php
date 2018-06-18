@@ -72,10 +72,12 @@ function save_body_classes( $post_id, $post ) {
 function page_body_class( $classes ) {
 	$_post = get_post();
 
-	$body_classes = get_post_meta( $_post->ID, '_jcdream_body_class', true );
+	if ( $_post ) {
+		$body_classes = get_post_meta( $_post->ID, '_jcdream_body_class', true );
 
-	if ( $body_classes ) {
-		$classes[] = esc_attr( $body_classes );
+		if ( $body_classes ) {
+			$classes[] = esc_attr( $body_classes );
+		}
 	}
 
 	return $classes;
