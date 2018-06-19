@@ -15,7 +15,7 @@ add_action( 'init', 'jcdream_menus' );
  * @return string
  */
 function jcdream_theme_version() {
-	return '0.0.7';
+	return '0.0.8';
 }
 
 /**
@@ -54,21 +54,8 @@ function jcdream_scripts() {
 	// Enqueue JCDREAM styles with theme version.
 	wp_enqueue_style( 'jcdream-style', get_stylesheet_directory_uri() . '/style.css', array( 'twentyseventeen-style', 'nunito' ), jcdream_theme_version() );
 
-	// Define some internationalization variables.
-	$twentyseventeen_l10n = array(
-		'quote' => twentyseventeen_get_svg( array( 'icon' => 'quote-right' ) ),
-		'has_navigation' => 'true',
-		'expand' => __( 'Expand child menu', 'twentyseventeen' ),
-		'collapse' => __( 'Collapse child menu', 'twentyseventeen' ),
-		'icon' => twentyseventeen_get_svg( array( 'icon' => 'expand', 'fallback' => true ) ),
-	);
-
-	// Enqueue the twentyseventeen skip link focus fix.
-	wp_enqueue_script( 'twentyseventeen-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '1.0', true );
-	wp_localize_script( 'twentyseventeen-skip-link-focus-fix', 'twentyseventeenScreenReaderText', $twentyseventeen_l10n );
-
-	// Enqueue the twentyseventeen navigation script.
-	wp_enqueue_script( 'twentyseventeen-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '1.0', true );
+	// Enqueue the JCDREAM navigation script.
+	wp_enqueue_script( 'jcdream-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array(), jcdream_theme_version(), true );
 }
 
 /**
