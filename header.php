@@ -24,14 +24,15 @@
 
 					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">
 
-						<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
+						<button id="js-menu-toggle" class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
 							<svg class="icon icon-bars" aria-hidden="true" role="img">
 								<use href="#icon-bars" xlink:href="#icon-bars"></use>
 							</svg>
 							<svg class="icon icon-close" aria-hidden="true" role="img">
 								<use href="#icon-close" xlink:href="#icon-close"></use>
 							</svg>
-							Menu
+							<span class="screen-reader-text">Toggle site menu</span>
+							<span aria-hidden="true">Menu</span>
 						</button>
 
 						<?php

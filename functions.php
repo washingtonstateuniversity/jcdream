@@ -53,6 +53,9 @@ function jcdream_scripts() {
 
 	// Enqueue JCDREAM styles with theme version.
 	wp_enqueue_style( 'jcdream-style', get_stylesheet_directory_uri() . '/style.css', array( 'twentyseventeen-style', 'nunito' ), jcdream_theme_version() );
+
+	// Enqueue the JCDREAM navigation script.
+	wp_enqueue_script( 'jcdream-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array(), jcdream_theme_version(), true );
 }
 
 /**
